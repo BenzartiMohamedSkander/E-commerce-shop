@@ -49,6 +49,113 @@ Table of Content:
   margin: 0px;
   padding: 0px;
 }
+.label-file {
+  cursor: pointer;
+  color: #00b1ca;
+  font-weight: bold;
+}
+.label-file:hover {
+  color: #25a5c4;
+}
+/*et on masque le input
+.input-file {
+  display: none;
+}*/
+.upload .browse input[type='file']{
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 3px;
+  height: 1px;
+  width: 1px;
+  z-index: -1;
+}
+#myphoto{
+  margin-right: 100px;
+
+}
+.madivision {
+  border: 1px solid #eff0eb;
+  background: #bbe0db;
+  color:rgb(15, 15, 15);
+  padding: 70px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+.divmodify {
+  border: 1px solid #eff0eb;
+  background: #fafaff;
+  color:#0f0f0f;
+  margin-left:0px;
+  align-items: center;
+  padding-left:0px;
+  text-align: center;
+  width:300px;
+  
+}
+
+/*------------------------------------*/
+.tablemodify {
+  background:transparent;
+  width: 50px;
+  color:#f8f0f0;
+  border-bottom: 1px solid rgb(24, 20, 20);
+  margin:10px 10px;
+  padding: 10px 10px;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+.tdcol1  {
+  border-bottom: 4px solid rgb(226, 225, 225);
+  width: 30px;
+  height: 30px;
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+}
+.tdcol2 {
+  border-bottom: 4px solid rgb(226, 225, 225);
+  background-color:transparent;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+.tdmodify  {
+  border-bottom: 4px solid rgb(226, 225, 225);
+  width: 50px;
+  height: 30px;
+  margin-left: 36px;
+}
+tr:hover {background-color: #f5f5f5;}
+/* cette commande donne une couleur pour les les ligne inpaire */
+/*tr:nth-child(even) {background-color: #dfe2c5;}*/
+/*-------------------------------------*/
+.madivisioni {
+  border: 1px solid #b1b3ac;
+  background: tr;
+  color:rgb(15, 15, 15);
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+/*---------------mon css nader ---------------------*/
+.moencadrementth {
+  border-top: 0px;
+  margin-left: 50px;
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 50;
+  font-family: "Roboto", sans-serif;
+  color: #d41414;
+  border-bottom: 10px !important;
+}
+/*-------------- fin Mon css nader -----------------*/
+/*--------------------------------------------------*/
 
 a {
   text-decoration: none;
@@ -3546,21 +3653,24 @@ h6 {
   transition: all 300ms linear 0s;
   border-radius: 5px;
 }
-
 .main_btn:hover {
   background: transparent;
   color: #c5322d;
 }
 
-.main_btn2 {
+.main_btnp {
+  width: 70px;
+  text-align: center;
   display: inline-block;
   background: #c5322d;
-  padding: 0px 32px;
+  padding: 2px 2px;
+  margin: 1px 1px;
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 38px;
+  line-height: 48px;
+  border: 1px solid #c5322d;
   border-radius: 0px;
   outline: none !important;
   -webkit-box-shadow: none !important;
@@ -3571,9 +3681,10 @@ h6 {
   -webkit-transition: all 300ms linear 0s;
   -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
+  border-radius: 5px; 
 }
 
-.main_btn2:hover {
+.main_btnp:hover {
   background: transparent;
   color: #c5322d;
 }
@@ -4660,7 +4771,8 @@ h6 {
   align-self: center;
 }
 
-.cart_inner .table tbody tr td .media .media-body p {
+.cart_inner .table tbody tr td .medi
+a .media-body p {
   margin-bottom: 0px;
 }
 
@@ -5085,6 +5197,7 @@ h6 {
 }
 
 .billing_details h3 {
+ 
   font-size: 18px;
   color: #222222;
   border-bottom: 1px solid #eee;
@@ -5099,6 +5212,7 @@ h6 {
 .billing_details .contact_form .form-group input {
   border-radius: 3px;
   color: #777777;
+ 
 }
 
 .billing_details .contact_form .form-group input.placeholder {
@@ -5166,7 +5280,11 @@ h6 {
   color: #222222;
   padding-bottom: 15px;
 }
+. {
+  background-color: #d6e1ec;
+  border: "4";
 
+}
 .order_box .list li a {
   font-size: 14px;
   color: #777777;
